@@ -1,0 +1,98 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color:#011c2f; /* Blue background */
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #1180ff;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar-logo h1 {
+  color: #ffffff; /* Gold text */
+  font-size: 24px;
+}
+
+/* Navbar Links Styling */
+.navbar-links ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links a {
+  color: rgb(224, 223, 223); /* Gold text for links */
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-links a:hover {
+  color: #1180ff; /* Orange on hover */
+}
+
+.navbar-links a.active {
+  color: #fafafa; /* Bright orange for active link */
+  font-weight: bold;
+}
+
+/* Hamburger Icon Styling */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fcfcfc; /* Gold hamburger icon */
+}
+
+.hamburger:hover {
+  color: #1180ff; /* Orange on hover */
+}
+
+/* Mobile Menu Styling */
+@media (max-width: 768px) {
+  .navbar-links {
+      display: none;
+      width: 100%;
+      background-color: #002147; /* Dark blue for mobile menu */
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 1rem;
+      text-align: center;
+  }
+
+  .navbar-links.active {
+      display: block;
+  }
+
+  .navbar-links ul {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .navbar-links li {
+      margin: 10px 0;
+  }
+
+  .hamburger {
+      display: block;
+  }
+}

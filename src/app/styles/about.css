@@ -1,0 +1,201 @@
+
+#about-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 10%;
+    gap: 2rem;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #003153;
+}
+
+.about-left, .about-right {
+    flex: 1;
+    max-width: 500px;
+}
+
+.about-left img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.about-right {
+    width: 100%;
+}
+
+.about-right h1 {
+    color:  #ffff;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+.me{
+   color: #1180ff ;
+}
+.about-right h4 {
+    font-size: 1.2rem;
+    color: #1180ff;
+    margin-bottom: 5px;
+}
+
+.about-right p {
+    color: white;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 0 0 15px;
+}
+
+.about-right .address {
+    margin: 25px 0;
+}
+
+.about-right ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    flex-wrap: wrap;
+}
+
+.address .address-logo {
+    margin-right: 10px;
+    color: #1180ff;
+    font-size: 1.5rem;
+}
+
+.address .saprater {
+    margin: 0 10px;
+}
+
+.about-right .expertise ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+.expertise h3 {
+    color:#1180ff ;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.expertise .expertise-logo {
+    font-size: 1.8rem;
+    color:  #1180ff;
+    margin-right: 8px;
+}
+
+.expertise-logo {
+    font-size: 2rem; /* Adjust the icon size */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  #html-icon {
+    color: #E34F26; /* HTML original color */
+  }
+  
+  #css-icon {
+    color: #1572B6; /* CSS original color */
+  }
+  
+  #js-icon {
+    color: #339933; /* JavaScript (Node.js) original color */
+  }
+  
+  #react-icon {
+    color: #61DAFB; /* React original color */
+  }
+  #next-icon {
+    color: #000000; /* Next.js Color */
+  }
+  
+  #ts-icon {
+    color: #3178c6; /* TypeScript Color */
+  }
+  
+  #tailwind-icon {
+    color: #38bdf8; /* Tailwind CSS Color */
+  }
+  
+@media (max-width: 768px) {
+    #about-section {
+        flex-direction: column;
+        padding: 40px 5%;
+    }
+
+    .about-left img {
+        max-width: 250px;
+    }
+
+    .about-right h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-right h4 {
+        font-size: 1rem;
+    }
+
+    .about-right p {
+        font-size: 0.9rem;
+    }
+
+    .about-right ul li {
+        font-size: 0.9rem;
+    }
+
+    .expertise h3 {
+        font-size: 1.3rem;
+    }
+
+    .expertise .expertise-logo {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #about-section {
+        padding: 20px 3%;
+    }
+
+    .about-left img {
+        max-width: 200px;
+    }
+
+    .about-right h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-right p {
+        font-size: 0.85rem;
+    }
+
+    .address .address-logo,
+    .expertise .expertise-logo {
+        font-size: 1.2rem;
+    }
+
+    .about-right .address ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-right .address ul li {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .address .saprater {
+        display: none;
+    }
+}

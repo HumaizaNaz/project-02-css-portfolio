@@ -1,0 +1,180 @@
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hero-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 100%;
+    max-width: 200px;
+    object-fit: cover;
+  }
+  
+  .hero-text {
+    flex: 1;
+  }
+  
+  .hero-heading {
+    font-size: 2.5rem;
+    color: white; 
+    margin-bottom: 0.5rem;
+  }
+  .hero-heading span {
+    color:whitesmoke ;
+  }
+  
+  .hero-subheading {
+    font-size: 1.75rem;
+    color: #1180ff;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-paragraph {
+    font-size: 1.2rem;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 1.8rem;
+    transition: color 0.3s ease; 
+  cursor: pointer;
+   
+  }
+  
+  #github-link .icon {
+    color: #ffffff; /* GitHub original color */
+  }
+  
+  #linkedin-link .icon {
+    color: #0088d1; /* LinkedIn original color */
+  }
+  
+  #facebook-link .icon {
+    color: #e4e4e4; /* Facebook original color */
+  }
+  
+  #instagram-link .icon {
+    color: #e4405f; /* Instagram original color */
+  }
+  
+  
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-heading {
+      font-size: 2rem;
+    }
+  
+    .hero-subheading {
+      font-size: 1.4rem;
+    }
+  
+    .hero-paragraph {
+      font-size: 1rem;
+    }
+  
+    .profile-pic {
+      max-width: 200px;
+    }
+  
+    
+    .hero-icons {
+      justify-content: center;
+      margin-top: 1rem;
+    }
+  
+    .icon {
+      font-size: 1.5rem; 
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .hero-heading {
+      font-size: 2.2rem;
+    }
+  
+    .hero-subheading {
+      font-size: 1.6rem;
+    }
+  
+    .hero-paragraph {
+      font-size: 1.1rem;
+    }
+  
+    .profile-pic {
+      max-width: 250px;
+    }
+  }
+  .btns {
+    display: flex;
+    gap: 1rem; /* Space between the buttons */
+    /* justify-content: center; Center the buttons horizontally */
+    margin-top: 1rem; /* Add some spacing above the buttons */
+  }
+  
+  .btns button {
+  
+    border-radius: 5px; /* Rounded corners */
+    padding: 0.8rem 1.5rem; /* Add padding */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  }
+  
+  .btn-1 {
+    background-color: #007BFF; /* Blue background for "Hire Me" */
+    color: #011c2f; /* White text */
+  }
+  
+  .btn-1:hover {
+    background: #011c2f;
+    border:2px solid #007BFF; 
+    color: #007BFF;
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+  }
+  
+  .btn-1:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+  }
+  
+  .btn-2 {
+    background-color: #011c2f; 
+    border: 2px solid #007BFF ;
+    color: #007BFF; 
+  }
+  
+  .btn-2:hover {
+    border-color: 2px solid #011c2f ;
+    color: #011c2f;
+    background-color: #007BFF; 
+    transform: scale(1.05);
+    /* box-shadow: #007BFF; */
+  }
+  
+  .btn-2:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+  }
+  
